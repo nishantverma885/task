@@ -1,0 +1,5 @@
+---
+- name: Install MySQL server on RedHat
+  ansible.builtin.dnf:
+    name: mysql8.4-server
+    state: present

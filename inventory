@@ -1,0 +1,9 @@
+[ubuntu]
+ubuntu-server ansible_host=172.31.15.161 ansible_user=ubuntu
+
+[redhat]
+redhat-server ansible_host=172.31.6.72 ansible_user=ec2-user
+
+[mysql_servers:children]
+ubuntu
+redhat
